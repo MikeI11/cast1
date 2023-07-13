@@ -52,21 +52,21 @@ function detectPersonalLevel() {
 
 detectPersonalLevel();
 
-//console.log(personalMovieDB);
+console.log(personalMovieDB);
 
-function showMyDB(hidden) {
-	if (!hidden) {
-		console.log(personalMovieDB);
-	}
-}
-showMyDB(personalMovieDB.private);
+// function showMyDB(hidden) {
+// 	if (!hidden) {
+// 		console.log(personalMovieDB);
+// 	}
+// }
+// showMyDB(personalMovieDB.private);
 
-function writeYourGenders() {
-	for (let i = 1; i <= 3; i++) {
-		personalMovieDB.genres[i - 1] = prompt(`Your favorite genres number ${i}`);
-	}
-}
-writeYourGenders();
+// function writeYourGenders() {
+// 	for (let i = 1; i <= 3; i++) {
+// 		personalMovieDB.genres[i - 1] = prompt(`Your favorite genres number ${i}`);
+// 	}
+// }
+// writeYourGenders();
 
 // let val = 7;
 // function createAdder() {
@@ -221,3 +221,28 @@ writeYourGenders();
 // const test = "12.2px";
 // console.log(parseInt(test));
 
+function calculateVolumeAndArea(length) {
+	if (typeof (length) !== "number" || length < 0 || !Number.isInteger(length)) {
+		return "Mistake";
+	}
+	let volume = 0;
+	let area = 0;
+	volume = length * length * length;
+	area = 6 * (length * length);
+	return `Volume of a cube: ${volume}, the area of the entire surface: ${area}`;
+}
+calculateVolumeAndArea(5);
+console.log(calculateVolumeAndArea(5));
+
+function getCoupeNumber(seatNumber) {
+	if (typeof (seatNumber) !== "number" || seatNumber < 0 || !Number.isInteger(seatNumber)) {
+		return "Mistake. Check the number place is write";
+	}
+
+	if (seatNumber === 0 || seatNumber > 36) {
+		return "Such places do not exist";
+	}
+	return Math.ceil(seatNumber / 4);
+}
+getCoupeNumber(33);
+console.log(getCoupeNumber(33));
