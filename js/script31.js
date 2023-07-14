@@ -31,14 +31,18 @@ const options = {
 	height: 1024,
 	colors: {
 		border: "black",
-		br: "red"
+		bg: "red"
 	},
 	makeTest: function () {
 		console.log("Test");
 	}
 };
 options.makeTest();
-console.log(Object.keys(options).length);
+
+const { border, bg } = options.colors;
+console.log(border,  bg);
+
+//console.log(Object.keys(options).length);
 
 //console.log(options["colors"]["border"]);
 

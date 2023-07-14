@@ -234,22 +234,22 @@
 // }
 // console.log(result);
 
-const rows = 6;
-const space = " ";
-const asterisk = "*";
+// const rows = 6;
+// const space = " ";
+// const asterisk = "*";
 
-for (let i = 1; i <= rows; i++) {
-	let row = "";
+// for (let i = 1; i <= rows; i++) {
+// 	let row = "";
 
-	// Add spaces before the asterisks
-	for (let j = 1; j <= rows - i; j++) {
-		row += space;
-	}
+// 	// Add spaces before the asterisks
+// 	for (let j = 1; j <= rows - i; j++) {
+// 		row += space;
+// 	}
 
-	// Add asterisks for each row
-	for (let k = 1; k <= 2 * i - 1; k++) {
-		row += asterisk;
-	}
+// 	// Add asterisks for each row
+// 	for (let k = 1; k <= 2 * i - 1; k++) {
+// 		row += asterisk;
+// 	}
 
-	console.log(row);
-}
+// 	console.log(row);
+// }

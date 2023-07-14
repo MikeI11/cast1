@@ -5,54 +5,54 @@
 // alert("holo");
 // const numberOfFilms = +prompt("How many movies did you watched?", "");
 
-let numberOfFilms;
+// let numberOfFilms;
 
-function start() {
-	numberOfFilms = +prompt(`How many films did you watched?`, "");
-	while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
-		numberOfFilms = +prompt(`How many films did you watched?`, "").trim();
-	}
-}
-start();
+// function start() {
+// 	numberOfFilms = +prompt(`How many films did you watched?`, "");
+// 	while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
+// 		numberOfFilms = +prompt(`How many films did you watched?`, "").trim();
+// 	}
+// }
+// start();
 
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	private: false
-};
+// const personalMovieDB = {
+// 	count: numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	genres: [],
+// 	private: false
+// };
 
-function rememberMyFilms() {
-	for (let i = 0; i < 1; i++) {
-		const a = prompt("One of the last movies you watched?", "").trim(),
-			b = prompt("How much would you rate him?", "").trim();
-		if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-			personalMovieDB.movies[a] = b;
-			console.log("done");
-		} else {
-			console.log("error");
-			i--;
-		}
-	}
-}
-rememberMyFilms();
+// function rememberMyFilms() {
+// 	for (let i = 0; i < 1; i++) {
+// 		const a = prompt("One of the last movies you watched?", "").trim(),
+// 			b = prompt("How much would you rate him?", "").trim();
+// 		if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+// 			personalMovieDB.movies[a] = b;
+// 			console.log("done");
+// 		} else {
+// 			console.log("error");
+// 			i--;
+// 		}
+// 	}
+// }
+// rememberMyFilms();
 
-function detectPersonalLevel() {
-	if (personalMovieDB.count < 10) {
-		console.log("You have seen several movies");
-	} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-		console.log("You are a classic viewer");
-	} else if (personalMovieDB.count >= 30) {
-		console.log("You are a movie buff");
-	} else {
-		console.log("Error");
-	}
-}
+// function detectPersonalLevel() {
+// 	if (personalMovieDB.count < 10) {
+// 		console.log("You have seen several movies");
+// 	} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+// 		console.log("You are a classic viewer");
+// 	} else if (personalMovieDB.count >= 30) {
+// 		console.log("You are a movie buff");
+// 	} else {
+// 		console.log("Error");
+// 	}
+// }
 
-detectPersonalLevel();
+// detectPersonalLevel();
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
 // function showMyDB(hidden) {
 // 	if (!hidden) {
