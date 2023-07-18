@@ -51,17 +51,17 @@ console.log(border,  bg);
 // console.log(options);
 
 
-let counter = 0;
-for (let key in options) {
-	if (typeof (options[key]) === "object") {
-		for (let i in options[key]) {
-			console.log(`Property ${i}, have value ${options[key][i]}`);
-			counter++;
-		}
-	} else {
-		console.log(`Property ${key}, have value ${options[key]}`);
-		counter++;
-	}
+// let counter = 0;
+// for (let key in options) {
+// 	if (typeof (options[key]) === "object") {
+// 		for (let i in options[key]) {
+// 			console.log(`Property ${i}, have value ${options[key][i]}`);
+// 			counter++;
+// 		}
+// 	} else {
+// 		console.log(`Property ${key}, have value ${options[key]}`);
+// 		counter++;
+// 	}
     
-	console.log(counter);
-}
+// 	console.log(counter);
+// }

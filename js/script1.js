@@ -61,12 +61,12 @@
 // }
 // showMyDB(personalMovieDB.private);
 
-// function writeYourGenders() {
+// function writeYourGenres() {
 // 	for (let i = 1; i <= 3; i++) {
 // 		personalMovieDB.genres[i - 1] = prompt(`Your favorite genres number ${i}`);
 // 	}
 // }
-// writeYourGenders();
+// writeYourGenres();
 
 // let val = 7;
 // function createAdder() {
