@@ -213,18 +213,18 @@ function reverse(str) {
 
 reverse(someString);
 
-const baseCurrencies = ["USD", "EUR"];
-const additionalCurrencies = ["UAH", "RUB", "CNY"];
+//const baseCurrencies = ["USD", "EUR"];
+//const additionalCurrencies = ["UAH", "RUB", "CNY"];
 
-function availableCurr(arr, missingCurr) {
-	let str = "";
-	arr.length === 0 ? str = "Нет доступных валют" : str = "Доступные валюты:\n";
-	arr.forEach(function (curr, i) {
-		if (curr !== missingCurr) {
-			str += `${curr}\n`;
-		}
-	});
-	return str;
-}
-availableCurr([...baseCurrencies, additionalCurrencies], "CNY");
+// function availableCurr(arr, missingCurr) {
+// 	let str = "";
+// 	arr.length === 0 ? str = "Нет доступных валют" : str = "Доступные валюты:\n";
+// 	arr.forEach(function (curr, i) {
+// 		if (curr !== missingCurr) {
+// 			str += `${curr}\n`;
+// 		}
+// 	});
+// 	return str;
+// }
+// availableCurr([...baseCurrencies, additionalCurrencies], "CNY");
 
